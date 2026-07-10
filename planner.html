@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All About BBQ — Chapter 10: The Cook Planner</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav"></nav>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kicker">Chapter 10 — The Tool</div>
+    <h1>🗓️ The Cook <span class="flame">Planner</span></h1>
+    <p class="lede">The most common way to ruin a barbecue is arithmetic. Pick your cut, your weight, and when you want to eat — and get the whole cook, planned backwards, with the hold already built in.</p>
+  </header>
+
+  <h2><span class="num">10.1</span>Plan the cook</h2>
+
+  <div class="planner-controls card">
+    <div class="control">
+      <label for="cutSel">The cut</label>
+      <select id="cutSel"></select>
+    </div>
+    <div class="control" id="weightControl">
+      <label for="weightIn">Weight (kg)</label>
+      <input type="number" id="weightIn" min="0.5" max="12" step="0.5" value="6">
+    </div>
+    <div class="control" id="styleControl">
+      <label for="styleSel">Pit style</label>
+      <select id="styleSel">
+        <option value="low">Low &amp; patient — 107°C</option>
+        <option value="classic" selected>Classic Texas — 121°C</option>
+        <option value="hot">Running hot — 135°C</option>
+      </select>
+    </div>
+    <div class="control">
+      <label for="serveIn">Serve at</label>
+      <input type="datetime-local" id="serveIn">
+    </div>
+  </div>
+
+  <div class="plan-summary" id="planSummary"></div>
+  <div class="callout" id="planWarning" style="display:none;"></div>
+
+  <div class="timeline" id="planTimeline"></div>
+
+  <p class="dim">Estimates follow the course's methods (chapters 2–7) with a safety margin — barbecue finishes when it finishes, which is exactly why the hold exists: an early brisket rests happily for hours, a late one ruins dinner. When in doubt, start earlier and hold longer.</p>
+
+  <div class="chapter-nav"></div>
+
+</div>
+<script src="js/planner.js"></script>
+<script src="js/nav.js"></script>
+</body>
+</html>
