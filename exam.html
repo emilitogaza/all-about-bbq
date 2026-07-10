@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All About BBQ — Chapter 11: The Certification Exam</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav"></nav>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kicker">Chapter 11 — Certification</div>
+    <h1>🎓 The Pitmaster <span class="flame">Exam</span></h1>
+    <p class="lede">Eighteen questions drawn from the whole course. Score 15 or better and claim your certificate. No time limit, no open flames required — but no peeking at the chapters either. You'd only be smoking yourself.</p>
+  </header>
+
+  <h2><span class="num">11.1</span>The exam</h2>
+  <div id="examForm"></div>
+
+  <div style="text-align:center; margin: 2rem 0;">
+    <button class="btn" id="gradeBtn">Grade my exam 🔥</button>
+    <button class="btn ghost" id="retryBtn" style="display:none; margin-left:0.6rem;">Reset &amp; retry</button>
+  </div>
+
+  <div class="exam-result" id="resultBox">
+    <div class="score" id="scoreLine"></div>
+    <p id="verdictLine"></p>
+  </div>
+
+  <div class="cert-claim" id="certClaim">
+    <p style="font-family:'Segoe UI',system-ui,sans-serif;">Enter your name as it should appear on the certificate:</p>
+    <input type="text" id="certName" placeholder="Your name" maxlength="60">
+    <button class="btn" id="claimBtn">Claim certificate</button>
+  </div>
+
+  <div class="certificate" id="certificate">
+    <div class="c-head">All About BBQ · Pitmaster Academy</div>
+    <h3>Certificate of Mastery</h3>
+    <p class="c-body">This certifies that</p>
+    <div class="c-name" id="certNameOut">—</div>
+    <p class="c-body">has completed the full course of study in the ways of smoke and fire — from the nine primals of the steer to the meat markets of Central Texas — and demonstrated the knowledge required of a</p>
+    <h3 style="font-size:1.5rem;">Certified Texas Pitmaster</h3>
+    <div class="c-seal">🔥🐄🔥</div>
+    <div class="c-foot">
+      <div class="sig">Low &amp; Slow, Dean of Smoke</div>
+      <div class="sig" id="certDate">—</div>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-bottom:2rem;">
+    <button class="btn ghost" id="printBtn" style="display:none;">🖨️ Print / save as PDF</button>
+  </div>
+
+  <div class="chapter-nav"></div>
+
+</div>
+
+<script src="js/exam.js"></script>
+<script src="js/nav.js"></script>
+</body>
+</html>

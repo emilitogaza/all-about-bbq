@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All About BBQ — Chapter 4: Beef</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav"></nav>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kicker">Chapter 4 — The Deep Dive</div>
+    <h1>🐄 The Whole <span class="flame">Cow</span></h1>
+    <p class="lede">A steer is broken down into nine primal cuts, and every steak, roast, and rib you've ever eaten comes from one of them. Click a cut to learn what it is, where its story comes from, and how to cook it.</p>
+  </header>
+
+  <h2><span class="num">4.1</span>The interactive cow</h2>
+
+  <div class="cow-stage">
+    <svg viewBox="0 0 900 545" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Interactive beef cuts diagram — a cow divided into nine primal cuts">
+      <defs>
+        <clipPath id="cowClip">
+          <path d="M 58 208
+                   C 50 220, 52 238, 62 246
+                   C 70 253, 84 256, 98 252
+                   L 122 248
+                   C 134 272, 150 288, 168 304
+                   C 182 320, 196 334, 212 344
+                   L 210 350
+                   L 220 490 L 260 490 L 270 378
+                   C 310 390, 380 396, 450 394
+                   C 520 392, 600 384, 656 372
+                   L 666 376
+                   L 684 490 L 722 490 L 736 368
+                   C 762 352, 782 322, 790 282
+                   C 797 244, 794 200, 778 168
+                   C 764 144, 736 132, 700 130
+                   L 320 124
+                   C 278 124, 240 132, 212 146
+                   C 180 162, 152 170, 128 170
+                   C 106 172, 88 180, 76 190
+                   C 68 196, 62 202, 58 208 Z"/>
+        </clipPath>
+      </defs>
+
+      <!-- ground shadow -->
+      <ellipse cx="460" cy="505" rx="330" ry="18" fill="#000" opacity="0.25"/>
+
+      <!-- tail (behind body) -->
+      <path d="M 782 180 C 812 210, 822 290, 812 370 C 810 386, 806 396, 800 402"
+            fill="none" stroke="#4a3a2c" stroke-width="14" stroke-linecap="round"/>
+      <ellipse cx="799" cy="412" rx="13" ry="22" fill="#2e2419" transform="rotate(8 799 412)"/>
+
+      <!-- base cow silhouette (head, hooves, anything not covered by a region) -->
+      <path class="cow-base" d="M 58 208
+                   C 50 220, 52 238, 62 246
+                   C 70 253, 84 256, 98 252
+                   L 122 248
+                   C 134 272, 150 288, 168 304
+                   C 182 320, 196 334, 212 344
+                   L 210 350
+                   L 220 490 L 260 490 L 270 378
+                   C 310 390, 380 396, 450 394
+                   C 520 392, 600 384, 656 372
+                   L 666 376
+                   L 684 490 L 722 490 L 736 368
+                   C 762 352, 782 322, 790 282
+                   C 797 244, 794 200, 778 168
+                   C 764 144, 736 132, 700 130
+                   L 320 124
+                   C 278 124, 240 132, 212 146
+                   C 180 162, 152 170, 128 170
+                   C 106 172, 88 180, 76 190
+                   C 68 196, 62 202, 58 208 Z"/>
+
+      <!-- clickable primal regions, clipped to the silhouette -->
+      <g clip-path="url(#cowClip)">
+        <polygon class="cut-region" data-cut="chuck"    points="132,166 335,110 335,308 180,308 118,240"/>
+        <polygon class="cut-region" data-cut="brisket"  points="150,290 335,308 335,400 205,380 140,315"/>
+        <polygon class="cut-region" data-cut="shank"    points="205,380 280,385 268,500 212,500"/>
+        <polygon class="cut-region" data-cut="rib"      points="335,110 470,110 470,272 335,272"/>
+        <polygon class="cut-region" data-cut="plate"    points="335,272 470,272 470,405 335,400"/>
+        <polygon class="cut-region" data-cut="shortloin" points="470,110 578,110 578,264 470,264"/>
+        <polygon class="cut-region" data-cut="sirloin"  points="578,110 660,110 660,264 578,264"/>
+        <polygon class="cut-region" data-cut="flank"    points="470,264 660,264 660,392 470,405"/>
+        <polygon class="cut-region" data-cut="round"    points="660,110 810,110 810,424 660,424"/>
+        <polygon class="cut-region" data-cut="shank"    points="660,424 810,424 810,500 660,500"/>
+      </g>
+
+      <!-- head & face details -->
+      <circle cx="97" cy="203" r="4.5" fill="#16110d"/>
+      <ellipse cx="70" cy="230" rx="4" ry="6" fill="#16110d" opacity="0.7"/>
+      <path class="cow-detail" d="M 122 248 C 110 236, 102 222, 100 208"/>
+      <!-- ear -->
+      <path d="M 128 168 C 116 148, 128 136, 148 142 C 160 146, 158 160, 146 168 Z" fill="#4a3a2c" stroke="#16110d" stroke-width="2.5"/>
+      <!-- horn -->
+      <path d="M 96 176 C 88 164, 90 152, 102 146 C 98 158, 100 168, 106 174 Z" fill="#d8c9a8" stroke="#16110d" stroke-width="2"/>
+
+      <!-- hooves -->
+      <g clip-path="url(#cowClip)">
+        <rect x="205" y="470" width="70" height="30" fill="#2e2419"/>
+        <rect x="675" y="470" width="60" height="30" fill="#2e2419"/>
+      </g>
+
+      <!-- labels -->
+      <text class="cut-label" x="240" y="230">CHUCK</text>
+      <text class="cut-label sm" x="252" y="352">BRISKET</text>
+      <text class="cut-label xs" x="240" y="445">SHANK</text>
+      <text class="cut-label" x="402" y="200">RIB</text>
+      <text class="cut-label" x="402" y="340">PLATE</text>
+      <text class="cut-label sm" x="524" y="185">SHORT</text>
+      <text class="cut-label sm" x="524" y="205">LOIN</text>
+      <text class="cut-label sm" x="619" y="196">SIRLOIN</text>
+      <text class="cut-label" x="560" y="330">FLANK</text>
+      <text class="cut-label" x="730" y="240">ROUND</text>
+      <text class="cut-label xs" x="703" y="452">SHANK</text>
+    </svg>
+    <div class="cow-hint">👆 Click a primal cut — details appear below · <span id="hoverName" style="color:var(--ember-soft);font-weight:600;"></span></div>
+  </div>
+
+  <div class="cut-panel" id="cutPanel">
+    <div class="placeholder">Pick a cut of beef above to meet it properly — what it is, where its story comes from, and how to cook it.</div>
+  </div>
+
+  <h2><span class="num">4.2</span>Reading the animal</h2>
+  <p>Notice the pattern on the diagram: the <strong>middle of the back</strong> (rib, short loin, sirloin) is steak country — lazy postural muscle, tender, cooked hot and fast. Everything at the <strong>ends and underside</strong> (chuck, brisket, plate, round, shank) worked for a living — collagen country, cooked low and slow. The flank and sirloin sit in between, which is why they produce the interesting hybrid cuts like tri-tip and flank steak: flavorful, quick, but demanding about slicing.</p>
+
+  <div class="grid cols-2">
+    <div class="card">
+      <h3>Grading, briefly</h3>
+      <p>USDA grades measure marbling: <strong>Select</strong> (lean), <strong>Choice</strong> (solid middle), <strong>Prime</strong> (heavily marbled, restaurant-bound). For low &amp; slow cuts like brisket, grade matters a lot — fat is your insurance policy over a 12-hour cook. Japanese <strong>Wagyu</strong> (A5 at the top) is a different scale entirely and mostly a hot-and-fast, tiny-portion luxury.</p>
+    </div>
+    <div class="card">
+      <h3>Steak doneness</h3>
+      <p><strong>Rare</strong> 49–52°C · <strong>Medium-rare</strong> 54–57°C · <strong>Medium</strong> 60–63°C · beyond that we legally cannot help you. Pull steaks ~3°C under target; they keep climbing while they rest. And they always rest.</p>
+    </div>
+  </div>
+
+  <div class="callout">
+    <span class="label">The graduation cook</span>
+    <p>The path through beef: master <strong>tri-tip</strong> (1 hour, forgiving), then <strong>chuck roast</strong> (6 hours, brisket rehearsal), then <strong>plate short ribs</strong> (9 hours, hard to ruin), and finally the <strong>full packer brisket</strong> — the final exam of barbecue. Pass that, and there is nothing left on the animal that can intimidate you.</p>
+  </div>
+
+  <div class="chapter-nav"></div>
+
+</div>
+
+<script src="js/beef-data.js"></script>
+<script src="js/cow.js"></script>
+<script src="js/nav.js"></script>
+</body>
+</html>
