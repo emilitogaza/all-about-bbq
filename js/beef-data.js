@@ -57,9 +57,9 @@ const BEEF_CUTS = {
       { name: 'Ribeye', desc: 'The flavor king. The spinalis cap (see below) wrapped around a tender eye, marbled throughout. If a steakhouse has one signature, it\'s this.' },
       { name: 'Ribeye cap (spinalis)', desc: 'Widely considered the single best bite on the animal — ribeye marbling with tenderloin tenderness. Sold separately if your butcher likes you.' },
       { name: 'Prime rib / standing rib roast', desc: 'The whole primal roasted as one. Holiday royalty. Reverse sear it and never look back.' },
-      { name: 'Tomahawk', desc: 'A ribeye with 12+ inches of frenched bone. You\'re paying steak price for bone, but the presentation is undefeated.' }
+      { name: 'Tomahawk', desc: 'A ribeye with 30+ cm of frenched bone. You\'re paying steak price for bone, but the presentation is undefeated.' }
     ],
-    tip: 'For steaks over 1.5" thick, reverse sear: smoke low to 46°C, then sear screaming hot. Edge-to-edge medium-rare with a smoke kiss and a crust.'
+    tip: 'For steaks over 4 cm thick, reverse sear: smoke low to 46°C, then sear screaming hot. Edge-to-edge medium-rare with a smoke kiss and a crust.'
   },
 
   plate: {
@@ -71,7 +71,7 @@ const BEEF_CUTS = {
     overview:
       'The plate is the cow\'s lower ribcage, below the rib primal. It gives BBQ two legends at opposite ends of the spectrum: beef short ribs — the biggest, richest, most collagen-loaded ribs on the animal — and the skirt steak, a thin, loose-grained diaphragm muscle with maybe the most concentrated beef flavor per gram of any cut.',
     history:
-      'Skirt steak is the reason fajitas exist: Mexican vaqueros in the Rio Grande Valley were often paid partly in throwaway cuts, and "faja" (belt/sash) describes the skirt perfectly. Grilled over mesquite and wrapped in tortillas, it went from ranch-hand rations to the sizzling-platter phenomenon of the 1980s — which promptly made the "throwaway" cut expensive. Beef plate short ribs became the modern Texas showpiece: the "dinosaur rib" that every craft BBQ joint now sells by the pound.',
+      'Skirt steak is the reason fajitas exist: Mexican vaqueros in the Rio Grande Valley were often paid partly in throwaway cuts, and "faja" (belt/sash) describes the skirt perfectly. Grilled over mesquite and wrapped in tortillas, it went from ranch-hand rations to the sizzling-platter phenomenon of the 1980s — which promptly made the "throwaway" cut expensive. Beef plate short ribs became the modern Texas showpiece: the "dinosaur rib" that every craft BBQ joint now sells by weight.',
     cook:
       'Plate short ribs (dino ribs): pure low & slow — salt and pepper, 135°C, 8–9 hours, no wrap needed thanks to all that fat; pull at 95°C when they jiggle like jello. Skirt steak: the opposite — screaming hot and fast, 2–3 minutes a side to medium-rare at most, then sliced thin against the grain. Against the grain is not optional with skirt; with the grain it\'s chewing gum.',
     starCuts: [
@@ -97,7 +97,7 @@ const BEEF_CUTS = {
     starCuts: [
       { name: 'New York strip', desc: 'The steak-lover\'s steak: firm, beefy chew, a proper fat cap, and no seams or surprises. The benchmark against which grills are judged.' },
       { name: 'T-bone', desc: 'Strip on one side of the bone, a modest slice of tenderloin on the other. Two textures, one steak.' },
-      { name: 'Porterhouse', desc: 'A T-bone from the rear of the short loin, where the tenderloin swells — USDA rules require the tenderloin side be at least 1.25" wide to earn the name.' }
+      { name: 'Porterhouse', desc: 'A T-bone from the rear of the short loin, where the tenderloin swells — USDA rules require the tenderloin side be at least 3.2 cm wide to earn the name.' }
     ],
     tip: 'Bone-in steaks look majestic but the bone slows cooking around it. If you struggle with even doneness, boneless strip is the honest move.'
   },
@@ -115,7 +115,7 @@ const BEEF_CUTS = {
     cook:
       'Tri-tip: the reverse-sear poster child — smoke at 121°C over oak to 46°C, sear hard, pull at 54°C. Critically, the grain changes direction mid-cut: slice each half against its own grain. Picanha: score the fat cap, skewer into a C, roast fat-side toward the coals; the cap bastes the meat as it renders. Top sirloin steaks: hot & fast, great weeknight value, just don\'t push past medium.',
     starCuts: [
-      { name: 'Tri-tip', desc: 'A 2-lb triangular roast that eats like a giant steak. Cooks in an hour. If brisket is a marathon, tri-tip is a victory lap.' },
+      { name: 'Tri-tip', desc: 'A 1 kg triangular roast that eats like a giant steak. Cooks in an hour. If brisket is a marathon, tri-tip is a victory lap.' },
       { name: 'Picanha (rump cap / coulotte)', desc: 'Top sirloin cap with its fat cap intact. Beefy, tender enough, and the fat is half the point. Ask the butcher to leave the cap on.' },
       { name: 'Top sirloin', desc: 'The affordable everyday steak — leaner and chewier than strip, but honest, beefy, and half the price.' }
     ],

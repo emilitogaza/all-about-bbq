@@ -41,7 +41,7 @@
       opts: [
         'It comes from the rib section',
         'It has no tenderloin at all',
-        'It\'s cut from the rear of the short loin, where the tenderloin side must be at least 1.25" wide',
+        'It\'s cut from the rear of the short loin, where the tenderloin side must be at least 3.2 cm wide',
         'It\'s always boneless'
       ],
       a: 2, why: 'Same bone, same muscles — the porterhouse just carries the big end of the tenderloin. (Ch. 4)'
@@ -100,7 +100,7 @@
       q: 'A brisket is done when:',
       opts: [
         'It hits exactly 95°C, no matter what',
-        'It has been on for 1 hour per pound',
+        'It has been on for 1 hour per kilo',
         'A probe slides into the flat like warm butter, typically somewhere around 93–96°C',
         'The point wiggles'
       ],
@@ -115,10 +115,40 @@
         'Cube the whole thing for burnt ends'
       ],
       a: 2, why: 'The hold is where good becomes great — and pre-slicing dries the flat in minutes. (Ch. 6–7)'
+    },
+    {
+      q: 'Jamaican jerk was born when:',
+      opts: [
+        'British colonists imported Indian spice traditions',
+        'Escaped Maroons cooked wild pig in covered pits over pimento wood so the smoke wouldn\'t reveal their camps',
+        'Hotel chefs invented it for tourists in the 1960s',
+        'Spanish sailors salted pork for long voyages'
+      ],
+      a: 1, why: 'Jerk is survival history made delicious — allspice wood, covered pits, the Blue Mountains. (Ch. 8)'
+    },
+    {
+      q: 'Tacos al pastor exist because:',
+      opts: [
+        'Aztec cooks roasted pork on volcanic stones',
+        'Texan brisket crossed the border south',
+        'Lebanese immigrants brought the vertical shawarma spit to Mexico, which swapped in chile-marinated pork',
+        'A Mexico City taquería misread a Brazilian churrasco recipe'
+      ],
+      a: 2, why: 'Technique migrates, flavor localizes — shawarma became al pastor in Puebla in the 1930s. (Ch. 8)'
+    },
+    {
+      q: 'Alabama white sauce is:',
+      opts: [
+        'A béchamel for pulled pork',
+        'Ranch dressing with extra garlic',
+        'A yogurt marinade for ribs',
+        'Mayonnaise, vinegar, horseradish and black pepper — invented at Big Bob Gibson\'s in 1925 for smoked chicken'
+      ],
+      a: 3, why: 'Decatur, Alabama, 1925 — chickens get dunked straight off the pit to this day. (Ch. 9)'
     }
   ];
 
-  const PASS_MARK = 12;
+  const PASS_MARK = 15;
   const form = document.getElementById('examForm');
   const resultBox = document.getElementById('resultBox');
   const scoreLine = document.getElementById('scoreLine');

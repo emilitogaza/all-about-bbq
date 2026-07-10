@@ -372,6 +372,39 @@ td:first-child { color: var(--text); font-weight: 600; }
 .t-step p { margin: 0.4rem 0; font-size: 0.97rem; color: var(--text-dim); }
 .t-step p strong { color: var(--gold); }
 
+/* ============ cook planner ============ */
+.planner-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 1rem;
+}
+.planner-controls .control { display: flex; flex-direction: column; gap: 0.35rem; }
+.planner-controls label {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+}
+.planner-controls select,
+.planner-controls input {
+  background: var(--bg-card-2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 0.98rem;
+  padding: 0.65rem 0.8rem;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+.planner-controls select:focus,
+.planner-controls input:focus { outline: none; border-color: var(--ember); }
+.planner-controls input[type="datetime-local"] { color-scheme: dark; }
+
+.plan-summary { margin: 0.5rem 0 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.plan-summary .badge { font-size: 0.82rem; padding: 0.4rem 0.9rem; }
+
 /* ============ exam & certificate ============ */
 .q-card {
   background: var(--bg-card);
