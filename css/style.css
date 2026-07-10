@@ -22,13 +22,14 @@ body {
   background: var(--bg);
   background-image: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(232, 99, 44, 0.08), transparent);
   color: var(--text);
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
+  font-stretch: 120%;
   line-height: 1.65;
   min-height: 100vh;
 }
 
 h1, h2, h3, h4, .nav, .badge, .btn, .chip {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
 }
 
 /* ---------- nav ---------- */
@@ -82,7 +83,7 @@ h1, h2, h3, h4, .nav, .badge, .btn, .chip {
 
 .hero { text-align: center; padding: 2.5rem 0 1.5rem; }
 .hero .kicker {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.25em;
   font-size: 0.75rem;
@@ -160,7 +161,7 @@ ul.clean li::before {
   margin: 1.5rem 0;
 }
 .callout .label {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
   font-weight: 700;
   font-size: 0.78rem;
   text-transform: uppercase;
@@ -177,7 +178,7 @@ table {
   border-collapse: collapse;
   margin: 1.2rem 0;
   font-size: 0.93rem;
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
 }
 th {
   text-align: left;
@@ -221,7 +222,7 @@ td:first-child { color: var(--text); font-weight: 600; }
   border-top: 1px solid var(--line);
 }
 .chapter-nav a {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
   color: var(--ember-soft);
   text-decoration: none;
   font-size: 0.95rem;
@@ -244,7 +245,7 @@ td:first-child { color: var(--text); font-weight: 600; }
 .cow-stage svg { width: 100%; height: auto; display: block; }
 .cow-hint {
   text-align: center;
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
   font-size: 0.82rem;
   color: var(--text-dim);
   padding: 0.5rem 0 0.8rem;
@@ -263,7 +264,7 @@ td:first-child { color: var(--text); font-weight: 600; }
   stroke-width: 3;
 }
 .cut-label {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
   font-weight: 700;
   font-size: 19px;
   fill: #16110d;
@@ -304,14 +305,14 @@ td:first-child { color: var(--text); font-weight: 600; }
   color: var(--text);
 }
 .cut-panel .aka {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
   color: var(--text-dim);
   font-size: 0.88rem;
   font-style: italic;
 }
 .cut-section { margin-top: 1.3rem; }
 .cut-section .label {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -330,7 +331,7 @@ td:first-child { color: var(--text); font-weight: 600; }
   padding: 0.8rem 1rem;
   font-size: 0.92rem;
 }
-.star-cut .name { font-weight: 700; color: var(--ember-soft); font-family: 'Segoe UI', system-ui, sans-serif; }
+.star-cut .name { font-weight: 700; color: var(--ember-soft); font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif; }
 .star-cut p { margin: 0.3rem 0 0; color: var(--text-dim); font-size: 0.9rem; }
 
 .method-row { display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; margin-top: 0.4rem; }
@@ -359,7 +360,7 @@ td:first-child { color: var(--text); font-weight: 600; }
 }
 .t-step.milestone::before { background: var(--gold); box-shadow: 0 0 0 2px var(--gold); }
 .t-time {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
   font-weight: 700;
   font-size: 0.78rem;
   text-transform: uppercase;
@@ -381,7 +382,7 @@ td:first-child { color: var(--text); font-weight: 600; }
 }
 .planner-controls .control { display: flex; flex-direction: column; gap: 0.35rem; }
 .planner-controls label {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -396,7 +397,7 @@ td:first-child { color: var(--text); font-weight: 600; }
   color: var(--text);
   font-size: 0.98rem;
   padding: 0.65rem 0.8rem;
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
 }
 .planner-controls select:focus,
 .planner-controls input:focus { outline: none; border-color: var(--ember); }
@@ -404,6 +405,51 @@ td:first-child { color: var(--text); font-weight: 600; }
 
 .plan-summary { margin: 0.5rem 0 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
 .plan-summary .badge { font-size: 0.82rem; padding: 0.4rem 0.9rem; }
+
+/* ============ myths ============ */
+.myth-card {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-left: 4px solid #c0504e;
+  border-radius: var(--radius);
+  padding: 1.3rem 1.5rem;
+  margin: 1.2rem 0;
+}
+.myth-head {
+  display: flex;
+  gap: 0.8rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+.chip {
+  display: inline-block;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.myth-chip { background: rgba(192, 80, 78, 0.18); color: #e08a88; border: 1px solid rgba(192, 80, 78, 0.5); }
+.chip.busted { background: rgba(127, 166, 80, 0.14); color: var(--green); border: 1px solid rgba(127, 166, 80, 0.4); margin-top: 0.8rem; }
+.myth-quote {
+  font-style: italic;
+  font-size: 1.08rem;
+  color: var(--text);
+}
+.myth-card p { margin: 0.4rem 0 0; font-size: 0.97rem; color: var(--text-dim); }
+.myth-card .label {
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  margin-right: 0.5rem;
+}
 
 /* ============ exam & certificate ============ */
 .q-card {
@@ -414,7 +460,7 @@ td:first-child { color: var(--text); font-weight: 600; }
   margin: 1rem 0;
 }
 .q-card .q-num {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
   color: var(--gold);
@@ -433,7 +479,7 @@ td:first-child { color: var(--text); font-weight: 600; }
   padding: 0.6rem 0.9rem;
   cursor: pointer;
   font-size: 0.95rem;
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
   color: var(--text-dim);
   transition: border-color 0.15s;
 }
@@ -442,7 +488,7 @@ td:first-child { color: var(--text); font-weight: 600; }
 .q-card.correct { border-color: var(--green); }
 .q-card.wrong { border-color: #c0504e; }
 .q-card .verdict {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
   font-size: 0.88rem;
   margin-top: 0.7rem;
   display: none;
@@ -470,7 +516,7 @@ td:first-child { color: var(--text); font-weight: 600; }
   padding: 1.6rem;
   border-radius: var(--radius);
   margin: 1.5rem 0;
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
   display: none;
 }
 .exam-result.pass { display: block; background: rgba(127,166,80,0.12); border: 1px solid var(--green); }
@@ -488,7 +534,7 @@ td:first-child { color: var(--text); font-weight: 600; }
   padding: 0.75rem 1rem;
   width: min(340px, 90%);
   margin-right: 0.6rem;
-  font-family: Georgia, serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
 }
 
 .certificate {
@@ -503,7 +549,7 @@ td:first-child { color: var(--text); font-weight: 600; }
   padding: 3rem 2.5rem;
   text-align: center;
   margin: 2rem 0;
-  font-family: Georgia, serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
 }
 .certificate.show { display: block; }
 .certificate .c-head {
@@ -517,7 +563,7 @@ td:first-child { color: var(--text); font-weight: 600; }
   font-size: 2.1rem;
   margin: 0.8rem 0;
   color: #2b2119;
-  font-family: Georgia, serif;
+  font-family: 'Mona Sans', 'Segoe UI', system-ui, sans-serif;
 }
 .certificate .c-name {
   font-size: 1.9rem;

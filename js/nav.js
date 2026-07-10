@@ -11,7 +11,8 @@
     { file: 'world.html',       num: 8,  short: 'World',       title: 'World of Smoke' },
     { file: 'sauces.html',      num: 9,  short: 'Sauces',      title: 'Sauces & Sides' },
     { file: 'planner.html',     num: 10, short: 'Planner',     title: 'The Cook Planner' },
-    { file: 'exam.html',        num: 11, short: 'Exam',        title: 'The Certification Exam' }
+    { file: 'myths.html',       num: 11, short: 'Myths',       title: 'Myths & Misconceptions' },
+    { file: 'exam.html',        num: 12, short: 'Exam',        title: 'The Certification Exam' }
   ];
 
   let current = window.location.pathname.split('/').pop();
